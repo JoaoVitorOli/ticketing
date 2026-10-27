@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch src/index.ts",
+    "build": "bun build ./src/index.ts --target=bun --production --outdir=dist",
+    "start": "NODE_ENV=production bun ./dist/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "bun check"
