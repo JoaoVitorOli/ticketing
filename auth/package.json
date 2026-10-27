@@ -4,12 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "bun --watch src/index.ts",
     "typecheck": "bun check"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6"
   },
   "peerDependencies": {
-    "typescript": "^7"
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
   }
 }
